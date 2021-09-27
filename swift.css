@@ -1,0 +1,301 @@
+:root {
+    color: hsl(97, 91%, 17%);
+    --o-headerfonts-font-family: "Serif";
+    --o-bodyfonts-font-family: "Alata";
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 0px;
+    /*hsl(97, 91%, 17%)*/
+}
+
+@font-face {
+    font-family: "Serif";
+    src: url("DMSerifDisplay-Regular.ttf")
+    format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Alata";
+    src: url("Alata-Regular.ttf")
+    format("truetype");
+    font-style: normal;
+    font-weight: lighter;
+}
+
+
+
+/*==========  ID Rules  ==========*/
+#first-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#second-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#last-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#header-wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0% auto;
+    background: linear-gradient(55deg, hsl(97, 40%, 43%) 60%, hsl(0, 0%, 100%) 40%);
+}
+
+#footer-container {
+    width: 80%;
+    height: 100%;
+    margin: 0% auto;
+    padding: 5% 0%;
+}
+
+
+
+
+
+/*==========  Class Rules  ==========*/
+.footer-wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0% auto;
+    background-color: hsl(68, 100%, 59%);
+}
+
+.footer-contacts {
+    width: 15%;
+    height: 15%;
+    margin: 0% 8%;
+}
+
+.logo-hub {
+    width: 48%;
+    height: 100%;
+    margin: 5% auto;
+}
+
+.paragraph-color {
+    color: hsl(98, 25%, 51%);
+}
+
+.modifications {
+    padding: 20px 0px;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.swift-logo {
+    width: 50%;
+    height: 100%;
+    padding-bottom: 10px;
+}
+
+.green-rider {
+    display: block;
+    margin: 0% auto;
+}
+
+.swift-features {
+    display: block;
+    margin: 0% auto;
+}
+
+.flexbox-wrapper {
+    width: 80%;
+    height: 100%;
+    margin: 3% auto;
+}
+
+.starter-text {
+    width: 100%;
+    height: 100%;
+}
+
+.charter-text {
+    width: 100%;
+    height: 100%;
+}
+
+.wrap-up {
+    margin: 0%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.world-backdrop {
+    width: 100%;
+    height: 100%;
+}
+
+.app-logs {
+    width: 80%;
+    height: 100%;
+    margin: 0% 10%;
+    position: absolute;
+}
+
+.speed-limit {
+    width: 100%;
+    height: 100%;
+    padding: 20px 0px;
+    background-color: hsl(97, 91%, 17%);
+}
+
+
+/*==========  Element Rules  ==========*/
+header {
+    width: 90%;
+    height: 100%;
+    margin: 0% auto;
+    padding-top: 5%;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: var(--o-headerfonts-font-family);
+}
+
+h2 {
+    font-size: 35px;
+    text-align: center;
+    text-transform: capitalize;
+    color: hsl(0, 0%, 100%);
+    font-family: var(--o-headerfonts-font-family);
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+    font-family: var(--o-bodyfonts-font-family);
+}
+
+button {
+    display: block;
+    font-size: 15px;
+    margin: 10px auto;
+    padding: 10px 40px;
+    border-radius: 40px;
+    color: hsl(0, 0%, 100%);
+    border: 1px solid transparent;
+    transition: all 0.5s ease-in-out;
+    background-color: hsl(97, 91%, 17%);
+    font-family: var(--o-bodyfonts-font-family);
+}
+
+
+
+/*==========  Animation and Pseudo Rules  ==========*/
+.modifications:hover {
+    color: hsl(0, 0%, 100%) !important;
+    transition: all 0.5s ease-in-out;
+    background-color: hsl(97, 91%, 17%);
+}
+
+button:hover {
+    transition: all 0.5s ease-in-out;
+    color: hsl(97, 91%, 17%);
+    background-color: transparent;
+    border-color: hsl(97, 91%, 17%);
+}
+
+
+/*==========  Media Queries Rules  ==========*/
+@media only screen and (orientation: landscape) {
+    #first-flexbox {
+        flex-direction: row-reverse;
+    }
+
+    #second-flexbox {
+        flex-direction: row;
+    }
+
+    #last-flexbox {
+        flex-direction: row;
+    }
+
+    .swift-logo {
+        width: auto;
+    }
+
+    h1 {
+        font-size: 35px;
+        text-align: left;
+    }
+
+    p {
+        font-size: 15px;
+        text-align: left;
+    }
+
+    header {
+        padding-top: 10px;
+    }
+
+    .flexbox-wrapper {
+        width: 90%;
+    }
+
+    .starter-text {
+        width: 50%;
+    }
+
+    .charter-text {
+        width: 33%;
+        margin: auto;
+    }
+
+    .swift-features {
+        width: 119px;
+        height: 158px;
+    }
+
+    .modifications p {
+        text-align: center !important;
+    }
+
+    .wrap-up {
+        height: 300px;
+    }
+
+    .app-logs {
+        padding-top: 5%;
+    }
+
+    .button-holder {
+        width: 62%;
+        height: fit-content;
+        margin: 0% auto;
+    }
+
+    .app-logs h1 {
+        font-size: 40px;
+        margin-bottom: 20px;
+        text-align: center !important;
+    }
+
+
+    .app-logs p {
+        font-size: 17px;
+        margin-top: 0px;
+        text-align: center !important;
+    }
+
+    button {
+        margin: 7px;
+        display: inline-block;
+    }
+}

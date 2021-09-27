@@ -1,0 +1,140 @@
+#first-flexbox {
+    flex-direction: row-reverse;
+}
+
+#second-flexbox {
+    flex-direction: row;
+}
+
+#last-flexbox {
+    flex-direction: row;
+}
+
+.swift-logo {
+    width: auto;
+}
+
+h1 {
+    font-size: 35px;
+    text-align: left;
+}
+
+p {
+    font-size: 15px;
+    text-align: left;
+}
+
+header {
+    padding-top: 10px;
+}
+
+.flexbox-wrapper {
+    width: 90%;
+}
+
+.starter-text {
+    width: 50%;
+}
+
+.charter-text {
+    width: 33%;
+    margin: auto;
+}
+
+.swift-features {
+    width: 119px;
+    height: 158px;
+}
+
+.modifications p {
+    text-align: center !important;
+}
+
+.wrap-up {
+    height: 300px;
+}
+
+.app-logs {
+    padding-top: 5%;
+}
+
+.button-holder {
+    width: 62%;
+    height: fit-content;
+    margin: 0% auto;
+}
+
+.app-logs h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center !important;
+}
+
+
+.app-logs p {
+    font-size: 17px;
+    margin-top: 0px;
+    text-align: center !important;
+}
+
+button {
+    margin: 7px;
+    display: inline-block;
+}
+
+
+@media screen and (orientation: landscape) {
+    .button-holder {
+        width: 40%;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    h1 {
+        font-size: 50px !important;
+    }
+
+    p {
+        font-size: 20px !important;
+    }
+
+    .app-logs {
+        padding-top: 3%;
+    }
+
+    .button-holder {
+        width: 40%;
+    }
+}
+
+@media  only screen and (min-width: 1366px){
+    h1 {
+        font-size: 70px !important;
+    }
+
+    p {
+        font-size: 25px !important; 
+    }
+
+    .green-rider {
+        width: 45%;
+    }
+
+    .wrap-up {
+        height: 400px;
+    }
+
+    .desktop-view {
+        width: 45%;
+    }
+
+    .button-holder {
+        width: 35%;
+    }
+
+    button {
+        font-size: 25px;
+        margin: 7px 15px;
+    }
+}
