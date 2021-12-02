@@ -10,6 +10,10 @@ Built with:
 - Flexbox
 - Mobile-first workflow
 
+View Site Live at:
+https://swift-logic.netlify.app
+
+
 
 Author:
 Charvine Inc. 
